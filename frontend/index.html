@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartFile Organizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="background-glow background-glow-left"></div>
+    <div class="background-glow background-glow-right"></div>
+    <div class="particles" aria-hidden="true">
+      <span class="particle particle-1"></span>
+      <span class="particle particle-2"></span>
+      <span class="particle particle-3"></span>
+      <span class="particle particle-4"></span>
+    </div>
+
+    <div class="app-shell">
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar__brand">
+          <img class="app-logo" src="./assets/icons/logo.png" alt="SmartFile Organizer" />
+          <div class="brand-copy">
+            <strong>SmartFile</strong>
+            <strong>Organizer</strong>
+          </div>
+        </div>
+
+        <nav class="sidebar__nav" aria-label="Navegação principal">
+          <button class="nav-item nav-item--active" type="button" data-section-trigger="inicio">
+            <span class="nav-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V20h14V9.5"></path></svg>
+            </span>
+            <span class="nav-item__label">Início</span>
+          </button>
+          <button class="nav-item" type="button" data-section-trigger="downloads">
+            <span class="nav-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M4 21h16"></path></svg>
+            </span>
+            <span class="nav-item__label">Downloads</span>
+          </button>
+          <button class="nav-item" type="button" data-section-trigger="desktop">
+            <span class="nav-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8"></path><path d="M12 16v4"></path></svg>
+            </span>
+            <span class="nav-item__label">Desktop</span>
+          </button>
+          <button class="nav-item" type="button" data-section-trigger="duplicados">
+            <span class="nav-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9h11v11H9z"></path><path d="M4 15V4h11"></path></svg>
+            </span>
+            <span class="nav-item__label">Duplicados</span>
+          </button>
+          <button class="nav-item" type="button" data-section-trigger="estatisticas">
+            <span class="nav-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-7"></path><path d="M22 20v-3"></path></svg>
+            </span>
+            <span class="nav-item__label">Estatísticas</span>
+          </button>
+        </nav>
+
+        <button class="sidebar__toggle" type="button" aria-label="Recolher sidebar" data-sidebar-toggle>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+        </button>
+      </aside>
+
+      <main class="main-panel">
+        <header class="window-controls" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </header>
+
+        <section class="app-section app-section--active" data-section="inicio">
+          <section class="hero-section">
+            <img class="hero-logo" src="./assets/icons/logo.png" alt="SmartFile Organizer" />
+            <h1>SmartFile Organizer</h1>
+            <p class="hero-section__subtitle">Transforme sua bagunça em organização com um clique.</p>
+
+            <div class="action-row">
+              <button class="action-button action-button--primary" type="button" data-action="downloads">
+                <span class="action-button__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M4 21h16"></path></svg>
+                </span>
+                <span>Organizar Downloads</span>
+              </button>
+              <button class="action-button" type="button" data-action="desktop">
+                <span class="action-button__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8"></path><path d="M12 16v4"></path></svg>
+                </span>
+                <span>Organizar Desktop</span>
+              </button>
+              <button class="action-button" type="button" data-action="duplicates">
+                <span class="action-button__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                </span>
+                <span>Procurar Duplicados</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="status-card" aria-label="Resumo da última operação">
+            <div class="status-card__header">
+              <span class="status-card__badge"></span>
+              <span>Organização concluída</span>
+            </div>
+            <div class="stats-grid">
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat="organized">126</span>
+                <span class="stat-block__label">Arquivos Organizados</span>
+              </article>
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat="folders">18</span>
+                <span class="stat-block__label">Pastas Criadas</span>
+              </article>
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat="duplicates">7</span>
+                <span class="stat-block__label">Duplicados Encontrados</span>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="app-section" data-section="downloads">
+          <section class="section-head">
+            <div>
+              <p class="section-head__eyebrow">Downloads</p>
+              <h2>Organize a pasta de Downloads em poucos segundos.</h2>
+              <p class="section-head__description">O fluxo desta tela está pronto para acionar a organização real dos arquivos assim que o backend for integrado.</p>
+            </div>
+            <button class="action-button action-button--primary action-button--compact" type="button" data-action="downloads">Organizar Downloads</button>
+          </section>
+
+          <section class="feature-card-grid">
+            <article class="info-card">
+              <h3>Categorias atendidas</h3>
+              <div class="chip-grid">
+                <span class="chip">Imagens</span>
+                <span class="chip">Vídeos</span>
+                <span class="chip">PDFs</span>
+                <span class="chip">Documentos</span>
+                <span class="chip">Planilhas</span>
+                <span class="chip">Compactados</span>
+                <span class="chip">Músicas</span>
+                <span class="chip">Executáveis</span>
+                <span class="chip">Outros</span>
+              </div>
+            </article>
+            <article class="info-card">
+              <h3>Como vai funcionar</h3>
+              <ul class="clean-list">
+                <li>Ler a pasta Downloads</li>
+                <li>Identificar o tipo de cada arquivo</li>
+                <li>Criar apenas as pastas necessárias</li>
+                <li>Mover os arquivos automaticamente</li>
+              </ul>
+            </article>
+          </section>
+        </section>
+
+        <section class="app-section" data-section="desktop">
+          <section class="section-head">
+            <div>
+              <p class="section-head__eyebrow">Desktop</p>
+              <h2>Deixe sua área de trabalho limpa sem complicação.</h2>
+              <p class="section-head__description">A interface segue o mesmo padrão visual da organização de Downloads, mantendo o MVP simples e consistente.</p>
+            </div>
+            <button class="action-button action-button--compact" type="button" data-action="desktop">Organizar Desktop</button>
+          </section>
+
+          <section class="feature-card-grid feature-card-grid--single">
+            <article class="info-card info-card--wide">
+              <h3>Fluxo planejado</h3>
+              <div class="step-row">
+                <div class="step-chip">1. Ler arquivos do Desktop</div>
+                <div class="step-chip">2. Classificar por categoria</div>
+                <div class="step-chip">3. Criar pastas necessárias</div>
+                <div class="step-chip">4. Mover arquivos</div>
+              </div>
+              <p class="info-card__note">Nesta etapa visual, os componentes já estão preparados. A execução real será ligada à API depois.</p>
+            </article>
+          </section>
+        </section>
+
+        <section class="app-section" data-section="duplicados">
+          <section class="section-head">
+            <div>
+              <p class="section-head__eyebrow">Duplicados</p>
+              <h2>Visualize arquivos duplicados antes de qualquer decisão.</h2>
+              <p class="section-head__description">A versão final listará duplicados reais com SHA-256, sem apagar nada automaticamente.</p>
+            </div>
+            <button class="action-button action-button--compact" type="button" data-action="duplicates">Procurar Duplicados</button>
+          </section>
+
+          <section class="info-card info-card--table">
+            <div class="table-head table-head--three">
+              <span>Nome</span>
+              <span>Caminho</span>
+              <span>Tamanho</span>
+            </div>
+            <div class="duplicate-list" data-duplicate-list></div>
+          </section>
+        </section>
+
+        <section class="app-section" data-section="estatisticas">
+          <section class="section-head">
+            <div>
+              <p class="section-head__eyebrow">Estatísticas</p>
+              <h2>Resumo claro da última execução.</h2>
+              <p class="section-head__description">Na integração, esta tela será alimentada exclusivamente pela API com os dados reais da última operação.</p>
+            </div>
+          </section>
+
+          <section class="status-card status-card--stats-only">
+            <div class="stats-grid stats-grid--wide">
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat-panel="organized">126</span>
+                <span class="stat-block__label">Arquivos Organizados</span>
+              </article>
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat-panel="folders">18</span>
+                <span class="stat-block__label">Pastas Criadas</span>
+              </article>
+              <article class="stat-block">
+                <span class="stat-block__value" data-stat-panel="duplicates">7</span>
+                <span class="stat-block__label">Duplicados Encontrados</span>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <div class="toast" role="status" aria-live="polite" data-toast>
+          <span class="toast__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          </span>
+          <div class="toast__copy">
+            <strong data-toast-title>Organização concluída</strong>
+            <span data-toast-message>Seus arquivos foram organizados com sucesso.</span>
+          </div>
+        </div>
+
+        <div class="loading-overlay" hidden data-loading>
+          <div class="loading-card">
+            <span class="loading-card__spinner"></span>
+            <p data-loading-text>Organizando seus Downloads...</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
