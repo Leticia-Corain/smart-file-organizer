@@ -1,4 +1,3 @@
-"""Service layer for SHA-256 duplicate detection."""
 from pathlib import Path
 import hashlib
 
@@ -20,7 +19,6 @@ def calculate_hash(file_path: Path) -> str:
 def find_duplicates(directory: Path) -> list:
     """
     Procura arquivos duplicados dentro de um diretório.
-    Retorna uma lista agrupando arquivos com o mesmo hash.
     """
 
     hashes = {}

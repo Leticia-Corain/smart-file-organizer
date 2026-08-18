@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.routes.organizer import router as organizer_router
 from backend.routes.stats import router as stats_router
+from backend.routes.duplicates import router as duplicates_router
 
 app = FastAPI(title="SmartFile Organizer API")
 
@@ -16,6 +17,7 @@ app.add_middleware(
 
 app.include_router(organizer_router)
 app.include_router(stats_router)
+app.include_router(duplicates_router)
 
 @app.get("/status")
 def get_status() -> dict:

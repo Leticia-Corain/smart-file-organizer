@@ -1,10 +1,7 @@
-"""Routes for duplicate file lookup."""
-
-from pathlib import Path
-
 from fastapi import APIRouter
 
-from services.duplicate_service import find_duplicates
+from backend.services.duplicate_service import find_duplicates
+from backend.utils.paths import get_known_folder
 
 router = APIRouter()
 
@@ -12,7 +9,9 @@ router = APIRouter()
 @router.get("/duplicates")
 def get_duplicates():
 
-    duplicates = find_duplicates(Path.home())
+    duplicates = find_duplicates(
+        get_known_folder("downloads")
+    )
 
     return {
         "duplicates": duplicates
