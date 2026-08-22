@@ -1,46 +1,101 @@
 # 📂 SmartFile Organizer
 
-> 🚧 **Em desenvolvimento** — Um organizador inteligente de arquivos desenvolvido em Python com foco em produtividade, automação e boas práticas de engenharia de software.
+> 🚀 **Versão 1 concluída | V2 em desenvolvimento** — Um organizador inteligente de arquivos desenvolvido em Python para automatizar a organização de arquivos, aumentar a produtividade e aplicar boas práticas de desenvolvimento de software.
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-V2%20Em%20Desenvolvimento-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-# 🚀 Em breve...
+# 📖 Sobre o Projeto
 
-O **SmartFile Organizer** será um projeto completo desenvolvido em Python para automatizar a organização de arquivos de forma rápida, segura e inteligente.
+O **SmartFile Organizer** é uma aplicação desenvolvida em Python para automatizar a organização de arquivos e pastas de forma rápida, segura e eficiente.
 
-O objetivo é aplicar conceitos utilizados no mercado, como arquitetura modular, boas práticas de desenvolvimento, manipulação de arquivos, tratamento de exceções e automação de processos.
+A primeira versão do projeto foi criada para resolver um problema real do dia a dia: manter diretórios organizados sem a necessidade de mover arquivos manualmente.
 
-Este projeto está sendo desenvolvido como parte do meu portfólio para demonstrar habilidades em **Python**, **Automação** e **Desenvolvimento de Software**.
+Atualmente, o projeto está evoluindo para a **Versão 2**, que contará com novos recursos, arquitetura mais robusta e funcionalidades inspiradas em soluções utilizadas no mercado.
 
 ---
 
-# ✨ Funcionalidades previstas
+# ✨ Funcionalidades da V1
 
-📂 Organização automática de arquivos
+✅ Organização automática de arquivos
 
-🔍 Detecção de arquivos duplicados
+✅ Criação automática de pastas
 
-🧹 Limpeza de pastas
+✅ Separação por categorias
 
-📊 Relatórios detalhados
+✅ Estrutura modular
 
-📝 Sistema de logs
+✅ Tratamento de erros
 
-💾 Backup automático
+✅ Automação de tarefas repetitivas
 
-↩️ Desfazer operações (Undo)
+---
 
-⚡ Organização por categoria, extensão, data e tamanho
+# 🚀 SmartFile Organizer V2 (Em Desenvolvimento)
 
-📈 Estatísticas da organização
+A próxima versão do SmartFile Organizer está sendo desenvolvida com foco em produtividade, segurança e experiência do usuário.
 
-🎨 Interface moderna no terminal
+## 🔥 Principais melhorias
 
-⚙️ Configuração personalizada
+### 📂 Organização Inteligente
+
+- Organização por categoria
+- Organização por extensão
+- Organização por data
+- Organização por tamanho
+- Regras personalizadas
+
+### 🔍 Detector de Arquivos Duplicados
+
+- Comparação utilizando SHA256
+- Identificação de duplicatas
+- Sugestão de limpeza
+- Relatório de espaço recuperado
+
+### ↩️ Sistema de Undo
+
+- Histórico das movimentações realizadas
+- Desfazer a última organização
+- Restaurar arquivos para a pasta original
+- Recuperação segura de alterações
+- Registro das ações para auditoria
+
+### 💾 Backup Automático
+
+- Backup antes de alterações críticas
+- Recuperação simplificada de arquivos
+- Maior segurança durante as operações
+
+### 📊 Relatórios e Estatísticas
+
+- Arquivos processados
+- Arquivos movidos
+- Duplicados encontrados
+- Espaço economizado
+- Tempo de execução
+- Estatísticas detalhadas
+
+### 📝 Sistema de Logs
+
+- Registro detalhado das operações
+- Histórico de erros e avisos
+- Auditoria das movimentações
+
+### 🎨 Interface Aprimorada
+
+- Menus mais intuitivos
+- Barra de progresso
+- Feedback visual das operações
+
+### 🧪 Qualidade de Software
+
+- Testes automatizados
+- Maior modularização
+- Validações avançadas
+- Melhor tratamento de exceções
 
 ---
 
@@ -60,41 +115,47 @@ Este projeto está sendo desenvolvido como parte do meu portfólio para demonstr
 
 ---
 
-# 📌 Objetivos
+# 🎯 Objetivos de Aprendizado
 
-Este projeto tem como objetivo praticar:
+Este projeto foi desenvolvido para praticar:
 
-- Arquitetura de projetos Python
-- Manipulação de arquivos
-- Programação Orientada a Objetos
-- Código limpo (Clean Code)
-- Boas práticas de desenvolvimento
+- Programação em Python
+- Manipulação de arquivos e diretórios
+- Programação Orientada a Objetos (POO)
+- Arquitetura de projetos
+- Automação de processos
+- Clean Code
 - Modularização
 - Tratamento de exceções
 - Testes automatizados
-- Automação de tarefas
+- Boas práticas de desenvolvimento
 
 ---
 
 # 📈 Status do Projeto
 
-🚧 O desenvolvimento está em andamento.
-
-Novas funcionalidades serão adicionadas em breve.
+| Versão | Status |
+|---------|---------|
+| V1 | ✅ Concluída |
+| V2 | 🚧 Em Desenvolvimento |
 
 ---
 
-# 🎯 Roadmap
+# 🗺️ Roadmap V2
 
-- [ ] Estrutura inicial do projeto
+- [x] Planejamento da arquitetura
+- [x] Estrutura inicial do projeto
 - [ ] Scanner inteligente de arquivos
-- [ ] Organização automática
-- [ ] Sistema de backup
-- [ ] Detector de duplicados
-- [ ] Geração de relatórios
+- [ ] Detector de arquivos duplicados
+- [ ] Sistema de Backup Automático
+- [ ] Sistema de Undo
+- [ ] Relatórios detalhados
+- [ ] Sistema de Logs
+- [ ] Estatísticas avançadas
+- [ ] Interface aprimorada
 - [ ] Testes automatizados
 - [ ] Documentação completa
-- [ ] Primeira Release (v1.0)
+- [ ] Release V2.0 🚀
 
 ---
 
@@ -110,4 +171,4 @@ https://github.com/Leh6201
 
 ---
 
-⭐ Acompanhe este repositório para acompanhar a evolução do projeto!
+⭐ Acompanhe este repositório para acompanhar a evolução do projeto e o lançamento da **SmartFile Organizer V2**.
